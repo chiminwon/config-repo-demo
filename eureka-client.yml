@@ -1,22 +1,8 @@
 spring:
-  profiles: peer1
   application:
     name: eureka-client
 server:
   port: 2001
-eureka: 
-  client: 
-    serviceUrl:
-      defaultZone: http://localhost:1001/eureka,http://127.0.0.1:1002/eureka
-
----
-
-spring:
-  profiles: peer2
-  application:
-    name: eureka-client
-server:
-  port: 2002
 eureka: 
   client: 
     serviceUrl:
