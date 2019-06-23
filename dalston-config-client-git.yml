@@ -1,5 +1,4 @@
 spring:
-  profiles: peer1
   application:
     name: dalston-consul-provider
   cloud:
