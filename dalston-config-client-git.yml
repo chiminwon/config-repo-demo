@@ -1,10 +1,27 @@
 spring:
-  profiles: peer1
   application:
-    name: dalston-consul-provider
+    name: dalston-config-server-git11
   cloud:
-    consul:
-      host: localhost
-      port: 8500
+    config:
+      server:
+        git:
+          uri: https://github.com/chiminwon/config-repo-demo.git
+#          username: chiminwon@gmail.com
+#          password: 1qaz!QAZ
+          skipSslValidation: true
+          timeout: 5
+          basedir: C:\Tools\workspace\Git\config-repo-demo
+
+#          uri: http://git.oschina.net/didispace/config-repo-demo/
+#          uri: https://gitee.com/chiminwon/config-repo-demo
+#          search-paths: repo
+#          username: chiminwon@gmail.com
+#          password: 1qaz!QAZ
+#          uri: git@github.com:chiminwon/config-repo-demo.git
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka,http://127.0.0.1:1002/eureka
 server:
-  port: 2001
+  port: 1501
