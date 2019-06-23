@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: dalston-config-client-git
 server:
   port: 1601
 eureka:
