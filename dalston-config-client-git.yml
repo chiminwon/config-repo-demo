@@ -8,16 +8,3 @@ spring:
       port: 8500
 server:
   port: 2001
-
----
-
-spring:
-  profiles: peer2
-  application:
-    name: dalston-consul-provider
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-server:
-  port: 2002
