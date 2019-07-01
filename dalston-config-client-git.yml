@@ -2,7 +2,7 @@
 #  application:
 #    name: dalston-config-client-git
 server:
-  port: 1601
+  port: 1701
 eureka:
   client:
     serviceUrl:
